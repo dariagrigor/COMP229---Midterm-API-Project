@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm API Project - COMP229 Winter 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Midterm API Project - COMP229 Winter 2024</h1>
+
+    <h2>Project Overview</h2>
+    <p>Your mission, should you choose to accept it, is to implement the missing logic for managing a collection of books via an API. The server is already set up and running on port <code>8080</code>, with an array of books ready for you to manipulate.</p>
+
+    <h3>Endpoints:</h3>
+    <ul>
+        <li><strong>GET /api/items</strong> - Retrieve the full list of books.</li>
+        <li><strong>GET /api/items/search?title=[partial title name]</strong> - Retrieve books by a partial title match.</li>
+        <li><strong>GET /api/items/:id</strong> - Retrieve a book by its index (ID).</li>
+        <li><strong>POST /api/items</strong> - Add a new book to the collection.</li>
+        <li><strong>PUT /api/items/:id</strong> - Update a book by its index (ID).</li>
+        <li><strong>DELETE /api/items/:id</strong> - Remove a book from the collection by its index (ID).</li>
+    </ul>
+
+    <p>The array of books is already defined for you in the <code>server.js</code> file, but <strong>you need to implement the logic</strong> for each API endpoint.</p>
+
+    <h3>Array Example:</h3>
+    <p>Below is an example of the array you'll be working with:</p>
+    <img src="images/array-example.jpg" alt="Array Example">
+
+    <h3>Postman Test Example:</h3>
+    <p>Here's an example of what your Postman test should look like when successfully testing your API:</p>
+    <img src="images/postman-example.jpg" alt="Postman Example">
+
+    <h2>Setup Instructions</h2>
+    <ol>
+        <li><strong>Clone the repository from GitHub:</strong><br>Link to repository: <a href="https://github.com/CENT-COL/COMP229-F24-MIDTERM" target="_blank">https://github.com/CENT-COL/COMP229-F24-MIDTERM</a></li>
+
+        <li><strong>Install dependencies:</strong><br>Run the following command in the root folder to install necessary Node.js packages:
+        <pre>npm install</pre></li>
+
+        <li><strong>Run the server:</strong><br>Start the server by running:
+        <pre>node server</pre>
+        The server will be running on port <code>8080</code>.</li>
+
+        <li><strong>Test the API:</strong><br>Use API testing tools like Postman, Thunder Client, or similar to test your API implementation. You should:
+            <ul>
+                <li>Make a request to each API endpoint.</li>
+                <li>Provide the necessary request body where applicable (for POST and PUT).</li>
+                <li>Capture the successful response in a screenshot.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Submission Requirements</h2>
+    <ol>
+        <li><strong>Screenshots:</strong><br>Provide <strong>clear screenshots</strong> of your API tests, showing the following:
+            <ul>
+                <li>There should be <strong>1 screenshot per Endpoint (6 in total)</strong></li>
+                <li>The API request.</li>
+                <li>The request body (where applicable).</li>
+                <li>The successful response.</li>
+            </ul>
+        </li>
+
+        <li><strong>Code Submission:</strong><br>Include your code in a <strong>.zip</strong> file, and provide a <strong>GitHub link to your repository containing the project.</strong> Make sure all screenshots are clearly visible and organized in your submission.</li>
+    </ol>
+
+    <h2>Good luck!</h2>
+    <p>Remember, write clean code, validate your inputs, and handle errors gracefully. May your code be bug-free!</p>
+
+</body>
+</html>
